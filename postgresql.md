@@ -3,18 +3,25 @@ https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection
 
 install package
 `yay postgresql`
+
 check version
 `postgres --version`
+
 init cluster
 `sudo initdb --locale $LANG -E UTF8 -D '/var/lib/postgres/data/'`
+
 enable and start service
 `sudo systemctl enable postgresql.service`
+
 open psql
 `sudo -u postgres psql`
+
 create user
 `CREATE USER <username> WITH ENCRYPTED PASSWORD ‘<password>’;`
+
 crate db
 `CREATE DATABASE <dbname>;`
+
 grant user to use db
 `GRANT ALL PRIVILEGES ON DATABASE <dbname> TO username;`
 
