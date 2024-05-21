@@ -1,5 +1,7 @@
-https://www.geeksforgeeks.org/how-to-install-postgresql-on-arch-based-linux-distributions-manjaro/
+https://www.geeksforgeeks.org/how-to-install-postgresql-on-arch-based-linux-distributions-manjaro
+
 https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection
+
 ### server
 install package
 ```sh
