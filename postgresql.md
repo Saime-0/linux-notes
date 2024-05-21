@@ -1,6 +1,6 @@
 https://www.geeksforgeeks.org/how-to-install-postgresql-on-arch-based-linux-distributions-manjaro/
 https://www.bigbinary.com/blog/configure-postgresql-to-allow-remote-connection
-
+### server
 install package
 ```
 yay postgresql
@@ -25,7 +25,7 @@ open psql
 ```
 sudo -u postgres psql
 ```
-
+### psql
 create user
 ```
 CREATE USER <username> WITH ENCRYPTED PASSWORD ‘<password>’;
@@ -36,16 +36,18 @@ crate db
 CREATE DATABASE <dbname>;
 ```
 
-grant user to use db
+grant user to use db, and exit from psql
 ```
 GRANT ALL PRIVILEGES ON DATABASE <dbname> TO username;
 ```
-
+### local pc
 let's test connect from another pc:
 ```
 telnet <ip> 5432
 ```
 > u take `telnet: Unable to connect to remote host: Connection refused```
+
+### server
 
 Allow connect to postgres from another pc:
 find config file of cluster
@@ -71,4 +73,6 @@ host    all             all              0.0.0.0/0                       md5
 host    all             all              ::/0                            md5
 ```
 and restart again server
-```sudo systemctl restart postgresql.service```
+```
+sudo systemctl restart postgresql.service
+```
