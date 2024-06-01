@@ -18,6 +18,8 @@ Host <name>
 
 
 ## enable login only key
+! CAUTION
+! required copy client key pubkey to `.ssh/authorized_keys`
 
 create group and add user
 ```ssh
@@ -29,6 +31,6 @@ and write lines
 ```config
 PubkeyAuthentication no
 PasswordAuthentication no
-User ssh_login_only_key
+Match User ssh_login_only_key
    PubkeyAuthentication yes
 ```
