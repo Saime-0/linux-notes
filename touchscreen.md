@@ -6,27 +6,20 @@ install deps
 
 create script and run
 ```bash
-cat > /etc/local/bin/rotate-normal <<EOL
-#!/bin/bash
+echo '#!/bin/bash
 xrandr --output eDP-1 --rotate normal
-xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
-EOL
+xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1' | sudo tee /etc/local/bin/rotate-normal
 
-cat > /etc/local/bin/rotate-left <<EOL
-#!/bin/bash
+echo '#!/bin/bash
 xrandr --output eDP-1 --rotate left
-xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1
-EOL
+xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" 0 -1 1 1 0 0 0 0 1' | sudo tee /etc/local/bin/rotate-left
 
-cat > /etc/local/bin/rotate-right <<EOL
-#!/bin/bash
+echo '#!/bin/bash
 xrandr --output eDP-1 --rotate right
-xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" 0 1 0 -1 0 1 0 0 1
-EOL
+xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" 0 1 0 -1 0 1 0 0 1' | sudo tee /etc/local/bin/rotate-right
 
-cat > /etc/local/bin/rotate-inverted <<EOL
-#!/bin/bash
+echo '#!/bin/bash
 xrandr --output eDP-1 --rotate inverted
-xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" -1 0 1 0 -1 1 0 0 1
-EOL
+xinput set-prop <TouchscreenName> --type=float "Coordinate Transformation Matrix" -1 0 1 0 -1 1 0 0 1' | sudo tee /etc/local/bin/rotate-inverted
+
 ```
