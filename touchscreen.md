@@ -3,7 +3,10 @@ install deps
 ```bash
 -S xorg-xrandr xorg-xinput
 ```
-
+use command for out avaiable xinput devices
+```bash
+xinput list --name-only
+```
 create script and run
 ```bash
 echo '#!/bin/bash
