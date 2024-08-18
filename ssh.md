@@ -46,12 +46,12 @@ sudo echo "PermitRootLogin no" > /etc/ssh/sshd_config.d/restrict_root_login.conf
 Include: connect using **only** public keys for **only** users of specific group
 
 create group and add user
-```ssh
+```sh
 sudo groupadd -U <usernames> ssh_login_only_key
 ```
 
 add include
-```config
+```sh
 sudo echo "PubkeyAuthentication no
 PasswordAuthentication no
 Match Group ssh_login_only_key
