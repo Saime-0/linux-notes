@@ -43,4 +43,4 @@ makepkg -si
 ### Packages
 
 - `bash-completion` - Programmable completion for the bash shell
-- `xmousepasteblock` - Userspace tool to disable middle mouse button paste in Xorg
+- `xmousepasteblock` - [setup](https://todo.placeholder). Userspace tool to disable middle mouse button paste in Xorg
