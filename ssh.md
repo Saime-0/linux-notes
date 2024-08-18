@@ -31,7 +31,7 @@ and write lines
 ```config
 PubkeyAuthentication no
 PasswordAuthentication no
-Match User ssh_login_only_key
+Match Group ssh_login_only_key
    PubkeyAuthentication yes
 ```
 
