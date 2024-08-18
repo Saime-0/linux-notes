@@ -11,7 +11,7 @@ useradd -G wheel -m <name>
 passwd <name>
 ```
 
-without reboot, user don't work ;(
+without pc reboot, user don't work ;(
 ```sh
 shutdown -r now
 ```
