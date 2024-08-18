@@ -20,6 +20,7 @@ passwd <name>
 ### AUR helper
 
 switch to user manually, and run one of below commands for install you prefer helper
+
 *change directory to tmp*
 ```sh
 cd /tmp
