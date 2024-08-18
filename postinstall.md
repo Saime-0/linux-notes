@@ -5,17 +5,22 @@ add `wheel` access to `sudo`
 echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/included
 ```
 
-install first needed deps
-```
-pacman -S --needed git base-devel
-```
-
-create new user and add to `wheel`, after command succesful, reboot pc
-```
+create new user and add to `wheel`, after command succesful
+```sh
 useradd -G wheel -m <name>
 passwd <name>
 ```
 
+without reboot, user don't work ;(
+```sh
+shutdown -r now
+```
+
+
+**MUSTHAVE**. install first needed deps
+```sh
+pacman -S --needed git base-devel
+```
 
 ### AUR helper
 
