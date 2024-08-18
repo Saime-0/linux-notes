@@ -1,10 +1,10 @@
-## restrict login to root
+### Restrict login to root
 ```sh
 sudo echo "PermitRootLogin no" > /etc/ssh/ssh_config.d/restrict_root_login.conf
 ```
 
 
-## save frequency\favorit connection to config
+### Save connection to config
 
 1. open `~/.ssh/config` using editor
 2. add lines
@@ -17,7 +17,7 @@ Host <name>
  3. use `ssh <name>` for use setup connection
 
 
-## enable login only key
+### Enable login only key
 ! CAUTION
 ! required copy client key pubkey to `.ssh/authorized_keys`
 
@@ -33,4 +33,10 @@ PubkeyAuthentication no
 PasswordAuthentication no
 Match User ssh_login_only_key
    PubkeyAuthentication yes
+```
+
+check and add if lines not exists in `/etc/ssh/sshd_config`
+```
+# Include drop-in configurations
+Include /etc/ssh/sshd_config.d/*.conf
 ```
