@@ -1,4 +1,4 @@
-### [CLIENT] Setup ssh on local machine
+### Client - Setup ssh on local machine
 
 Generate key
 ```sh
@@ -19,7 +19,7 @@ echo "Host <name>
      Compression yes" >> ~/.ssh/config
 ```
 
-### [SERVER] Setup ssh daemon on server
+### Server - Setup ssh daemon on server
 
 In this section we add includes to sshd config 
 
