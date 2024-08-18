@@ -7,7 +7,7 @@ echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/included
 
 install first needed deps
 ```
-sudo pacman -S --needed git base-devel
+pacman -S --needed git base-devel
 ```
 
 create new user and add to `wheel`, after command succesful, reboot pc
