@@ -36,14 +36,16 @@ sudo systemctl restart sshd.service
 > [!WARNING]
 ! next includes requires copy client public key to `.ssh/authorized_keys`
 
-Include: restrict login to `root`
+
+#### Include: restrict login to `root`
 
 add include
 ```sh
 sudo echo "PermitRootLogin no" > /etc/ssh/sshd_config.d/restrict_root_login.conf
 ```
 
-Include: connect using **only** public keys for **only** users of specific group
+
+#### Include: connect using **only** public keys for **only** users of specific group
 
 create group and add user
 ```sh
