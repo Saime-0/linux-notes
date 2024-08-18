@@ -26,7 +26,7 @@ create group and add user
 sudo groupadd -U <usernames> ssh_login_only_key
 ```
 
-open(create) in editor `/etc/ssh/ssh_config.d/login_only_key.conf`
+open(create) in editor `/etc/ssh/sshd_config.d/login_only_key.conf`
 and write lines
 ```config
 PubkeyAuthentication no
@@ -36,7 +36,11 @@ Match User ssh_login_only_key
 ```
 
 check and add if lines not exists in `/etc/ssh/sshd_config`
-```
+```conf
 # Include drop-in configurations
 Include /etc/ssh/sshd_config.d/*.conf
+```
+restart service
+```sh
+sudo systemctl restart sshd.service
 ```
