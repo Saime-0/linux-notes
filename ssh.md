@@ -33,7 +33,7 @@ after adding some include or config modify, service required restart
 sudo systemctl restart sshd.service
 ```
 
-[!WARNING]
+> [!WARNING]
 ! for next includes, required copy client public key to `.ssh/authorized_keys`
 
 Include: restrict login to `root`
