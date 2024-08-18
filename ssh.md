@@ -11,7 +11,7 @@ ssh-copy-id -i ~/.ssh/<key-name> <user>@<host>
 ```
 
 Save connection to config and use like: `ssh <connection-name>`
-```config
+```sh
 echo "Host <name>
      User <username>
      Hostname <host>
