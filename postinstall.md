@@ -12,8 +12,10 @@ sudo pacman -S --needed git base-devel
 
 create new user and add to `wheel`, after command succesful, reboot pc
 ```
-useradd -p <pass> -G wheel -m <name>
+useradd -G wheel -m <name>
+passwd <name>
 ```
+
 
 switch to user manually, and run below command for install yay
 ```sh
