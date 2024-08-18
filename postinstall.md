@@ -16,8 +16,7 @@ without reboot, user don't work ;(
 shutdown -r now
 ```
 
-
-**MUSTHAVE**. install first needed deps
+**musthave**. install first needed deps
 ```sh
 pacman -S --needed git base-devel
 ```
