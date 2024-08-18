@@ -1,56 +1,59 @@
-### Create key on local machine
-generate key
+### [CLIENT] Setup ssh on local machine
+
+Generate key
 ```sh
 ssh-keygen -t rsa -f ~/.ssh/<key-name> <user>@<host>
 ```
-copy to server
+
+Copy key to server
 ```sh
 ssh-copy-id -i ~/.ssh/<key-name> <user>@<host>
 ```
 
-### Restrict login to root
-```sh
-sudo echo "PermitRootLogin no" > /etc/ssh/sshd_config.d/restrict_root_login.conf
-```
-
-
-### Save connection to config
-
-1. open `~/.ssh/config` using editor
-2. add lines
+Save connection to config and use like: `ssh <connection-name>`
 ```config
-Host <name>
-     Hostname <host>
+echo "Host <name>
      User <username>
-     Compression yes
-```
- 3. use `ssh <name>` for use setup connection
-
-
-### Enable login only key
-[!WARNING]
-! required copy client public key to `.ssh/authorized_keys`
-
-create group and add user
-```ssh
-sudo groupadd -U <usernames> ssh_login_only_key
+     Hostname <host>
+     IdentityFile ~/.ssh/<key-name>
+     Compression yes" >> ~/.ssh/config
 ```
 
-open(create) in editor `/etc/ssh/sshd_config.d/login_only_key.conf`
-and write lines
-```config
-PubkeyAuthentication no
-PasswordAuthentication no
-Match Group ssh_login_only_key
-   PubkeyAuthentication yes
-```
+### [SERVER] Setup ssh daemon on server
+
+In this section we add includes to sshd config 
 
 check and add if lines not exists in `/etc/ssh/sshd_config`
 ```conf
 # Include drop-in configurations
 Include /etc/ssh/sshd_config.d/*.conf
 ```
-restart service
+after adding some include or config modify, service required restart
 ```sh
 sudo systemctl restart sshd.service
+```
+
+[!WARNING]
+! for next includes, required copy client public key to `.ssh/authorized_keys`
+
+Include: restrict login to `root`
+
+add include
+```sh
+sudo echo "PermitRootLogin no" > /etc/ssh/sshd_config.d/restrict_root_login.conf
+```
+
+Include: connect using **only** public keys for **only** users of specific group
+
+create group and add user
+```ssh
+sudo groupadd -U <usernames> ssh_login_only_key
+```
+
+add include
+```config
+sudo echo "PubkeyAuthentication no
+PasswordAuthentication no
+Match Group ssh_login_only_key
+   PubkeyAuthentication yes" > /etc/ssh/sshd_config.d/login_only_key.conf
 ```
