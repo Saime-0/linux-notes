@@ -1,6 +1,6 @@
 ### Restrict login to root
 ```sh
-sudo echo "PermitRootLogin no" > /etc/ssh/ssh_config.d/restrict_root_login.conf
+sudo echo "PermitRootLogin no" > /etc/ssh/sshd_config.d/restrict_root_login.conf
 ```
 
 
