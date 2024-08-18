@@ -34,7 +34,7 @@ sudo systemctl restart sshd.service
 ```
 
 > [!WARNING]
-! for next includes, required copy client public key to `.ssh/authorized_keys`
+! next includes requires copy client public key to `.ssh/authorized_keys`
 
 Include: restrict login to `root`
 
