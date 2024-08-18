@@ -1,3 +1,13 @@
+### Create key on local machine
+generate key
+```sh
+ssh-keygen -t rsa -f ~/.ssh/<key-name> <user>@<host>
+```
+copy to server
+```sh
+ssh-copy-id -i ~/.ssh/<key-name> <user>@<host>
+```
+
 ### Restrict login to root
 ```sh
 sudo echo "PermitRootLogin no" > /etc/ssh/sshd_config.d/restrict_root_login.conf
@@ -18,8 +28,8 @@ Host <name>
 
 
 ### Enable login only key
-! CAUTION
-! required copy client key pubkey to `.ssh/authorized_keys`
+[!WARNING]
+! required copy client public key to `.ssh/authorized_keys`
 
 create group and add user
 ```ssh
