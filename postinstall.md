@@ -5,7 +5,7 @@ add `wheel` access to `sudo`
 echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/included
 ```
 
-create new user and add to `wheel`, after command succesful
+create new user and add to `wheel`
 ```sh
 useradd -G wheel -m <name>
 passwd <name>
