@@ -1,21 +1,17 @@
-$_
+### Utils
+`ss` - another utility to investigate sockets
 
-jq
+### Commands
+`python3 -m http.server` - run http server with access to local directory
+`git ls-files -z <directory> | xargs -0 git rm --cached` - remove staged files from index in directory
 
-python3 -m http.server
+### Bash
+`ctrl+alt+l` - alternative `clear`
+`ctrl+l` - alternative `clear -x`
+`ctrl+alt+.` - select "next" previous last arg
+`ctrl+r` - search, next match
+`> file` - create empty file
+`$_` - hold last arg of previous cmd
 
-ss
 
-\> file
 
-ctrl+alt+l
-ctrl+l
-
-ctrl+alt+.
-
-ctrl+r
-
-remove staged files from index in directory
-```sh
-git ls-files -z <directory> | xargs -0 git rm --cached
-```
