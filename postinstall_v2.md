@@ -84,15 +84,15 @@ copy needed files from [dotfiles](https://github.com/Saime-0/config)
 
 ### install user apps
 install user apps `paru -S <pkgname>...`
-- helix
-- google-chrome
-- firefox
-- telegram-desktop
-- ristretto
-- libreoffice-still
-- obs-studio
-- qbittorrent
-- vlc - todo fix freeze
+- `helix` - post-modern modal text editor
+- `google-chrome` - web browser by Google (Stable Channel)
+- `firefox` - web Browser
+- `telegram-desktop` - telegram client
+- `ristretto` - fast and lightweight picture viewer for Xfce
+- `libreoffice-still` - libreOffice maintenance branch
+- `obs-studio` - software for live streaming and recording
+- `qbittorrent` - bitTorrent client
+- `vlc` - media player
 - `xarchiver p7zip unrar unzip zip` - gui archiver and supported formats
 
 ### instll utils
