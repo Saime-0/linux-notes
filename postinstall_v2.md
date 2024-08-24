@@ -118,7 +118,7 @@ install networkmanager for using as openvpn client, packages:
 networkmanager networkmanager-openvpn
 ```
 - `networkmanager` - network connection manager and user applications
-- `networkmanager-openvpn` - nm opvn plugin, along with the openvpn installation
+- `networkmanager-openvpn` - nm opvn plugin, will install openvpn together with himself
 
 exec cmd `nmcli connection import type openvpn file <filename.ovpn>` for add ovpn connection
 
