@@ -46,4 +46,18 @@ todo: move to .config: - uncomment `BottomUp` in `/etc/paru.conf`
 
 install hyprland `paru -S hyprland`
 
+install missing fonts
+```sh
+paru -S noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji
+```
+install fonts for chinese,japanese and korean 
+```sh
+paru -S noto-fonts-cjk  
+```
 
+paru -S alacritty helix google-chrome jack2 telegram-desktop btop htop
+
+
+### Used resources
+
+install missing fonts - https://www.reddit.com/r/archlinux/comments/slgacn/comment/hvqnffc
