@@ -69,9 +69,7 @@ may exec cmd `Hyprland` for enter into hyperland
 
 install sound server `paru -S pipewire pipewire-jack pipewire-pulse pipewire-alsa pavucontrol`
 
-*tip: start pulseaudio server `pipewire-pulse`*
-
-*tip: copy pipwire cfg to user dir `cp -r /usr/share/pipewire ~/.config/pipewire`*
+*IMPORTANT: in order for the sound to work, you need to restart your PC*
 
 install bluetooth `paru -S bluez bluez-utils blueman`
 
