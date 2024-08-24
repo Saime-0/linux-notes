@@ -85,6 +85,7 @@ install user apps `paru -S <pkgname>...`
 instll utils `paru -S <pkgname>...`
 - ntfs-3g
 - openssh
+- man-db
 
 ### install develop tools
 install develop tools `paru -S <pkgname>...`
