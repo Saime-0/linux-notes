@@ -2,8 +2,6 @@ enable builtin-dhcp client of iwd [wiki](https://wiki.archlinux.org/title/Iwd#En
 ```
 [General]
 EnableNetworkConfiguration=true
-[Network]
-NameResolvingService=systemd
 ```
 then `systemctl enable --now systemd-resolved` - start NSS
 
@@ -43,3 +41,9 @@ git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 ```
+
+todo: move to .config: - uncomment `BottomUp` in `/etc/paru.conf`
+
+install hyprland `paru -S hyprland`
+
+
