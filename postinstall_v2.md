@@ -52,7 +52,7 @@ replace `kitty` with `alacritty` in `~/.config/hypr/hyprland.conf`
 
 may exec cmd `Hyperland` for enter into hyperland
 
-install sound server `pau -S pipewire jack2`
+install sound server `paru -S pipewire pipewire-jack`
 
 copy needed files from [dotfiles](https://github.com/Saime-0/config)
 
@@ -65,9 +65,12 @@ install fonts for chinese,japanese and korean
 paru -S noto-fonts-cjk  
 ```
 
-install user apps `paru -S helix google-chrome  telegram-desktop htop`
+install user apps `paru -S helix google-chrome friefox telegram-desktop ristretto libreoffice-still`
 
+instll utils `paru -S ntfs-3g`
 
 ### Used resources
 
 install missing fonts - https://www.reddit.com/r/archlinux/comments/slgacn/comment/hvqnffc
+
+arch_auto_mount_ntfs - https://gist.github.com/suzker/5783a0027c6a9540a688
