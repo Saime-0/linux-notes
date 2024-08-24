@@ -93,7 +93,7 @@ install user apps `paru -S <pkgname>...`
 - obs-studio
 - qbittorrent
 - vlc - todo fix freeze
-- xarchiver - todo setup
+- `xarchiver p7zip unrar unzip zip` - gui archiver and supported formats
 
 ### instll utils
 instll utils `paru -S <pkgname>...`
