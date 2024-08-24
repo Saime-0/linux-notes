@@ -1,14 +1,14 @@
 # Table of Contents
 1. [Nework, user and AUR](#Nework,_user_and_AUR)
 2. [Desktop environment](#Desktop_environment)
-  1. [Hypr](#Hypr)
-  2. [Dotfiles moment](#Dotfiles_moment)
-  3. [Bluetooth](#Bluetooth)
-  4. [VPN](#VPN)
+    1. [Hypr](#Hypr)
+    2. [Dotfiles moment](#Dotfiles_moment)
+    3. [Bluetooth](#Bluetooth)
+    4. [VPN](#VPN)
 5. [Install user applications](#Install_user_applications)
-  1. [User apps](#User_apps)
-  2. [Utils](#Utils)
-  3. [Develop](#Develop)
+    1. [User apps](#User_apps)
+    2. [Utils](#Utils)
+    3. [Develop](#Develop)
 
 
 
