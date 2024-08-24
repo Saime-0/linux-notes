@@ -142,7 +142,7 @@ use `paru -S <pkgname>...` for install packages
 - `openssh`
 - `man-db`
 
-### install develop tools
+### Develop
 - `docker - todo setup`
 - `go`
 - `jdk21-openjdk`
