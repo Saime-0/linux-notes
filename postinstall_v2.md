@@ -48,9 +48,10 @@ makepkg -si
 
 ## Desktop environment
 
-install hyprland and de apps 
-
-packages: `hyprland alacritty xdg-desktop-portal-hyprland wofi btop xfce4-notifyd thunar grimblast-git`
+install hyprland and de apps, packages: 
+```
+hyprland alacritty xdg-desktop-portal-hyprland wofi btop xfce4-notifyd thunar grimblast-git
+```
 - `hyprland` - tiling Wayland compositor
 - `alacritty` - terminal emulator
 - `helix` - post-modern modal text editor
@@ -65,10 +66,10 @@ exec cmd `cp /usr/share/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf` for
 
 exec cmd `helix ~/.config/hypr/hyprland.conf` or `helix $_` and replace `kitty` with `alacritty`
 
-install missing fonts and fonts for chinese,japanese and korean 
-
-packages: `noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk`
-
+install missing fonts and fonts for chinese, japanese and korean, packages:
+```
+noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk
+```
 ### Dotfiles moment
 
 may exec cmd `Hyprland` for enter into hyperland
@@ -84,18 +85,22 @@ install sound server `pipewire pipewire-jack pipewire-pulse pipewire-alsa pavuco
 
 ### Bluetooth
 
-install bluetooth 
-
-packages: `bluez bluez-utils blueman`
+install bluetooth, packages:
+```
+bluez bluez-utils blueman
+```
 - bluez
 - bluez-utils
 - blueman
   
 exec cmd `systemctl enable --now bluetooth.service` for start bluez daemon
 
-install networkmanager for using as openvpn client
+### VPN
 
-packages: `networkmanager networkmanager-openvpn`
+install networkmanager for using as openvpn client, packages:
+```
+networkmanager networkmanager-openvpn
+```
 - networkmanager
 - networkmanager-openvpn
 
