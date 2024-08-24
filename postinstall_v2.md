@@ -23,9 +23,13 @@ create new user and add to `wheel`
 ```sh
 useradd -G wheel -m <username>
 passwd <username>
-```
+``` 
 
 exec cmd `su <username>` for login as the user
+
+uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
+
+install rustup `paru -S rustup`
 
 exec cmd `rustup default stable` for install rust (its required by paru)
 
