@@ -72,15 +72,27 @@ paru -S noto-fonts-cjk
 install user apps `paru -S <pkgname>...`
 - helix
 - google-chrome
-- friefox
+- firefox
 - telegram-desktop
 - ristretto
 - libreoffice-still
 - obs-studio
+- qbittorrent
+- vlc - todo fix freeze
+- xarchiver - todo setup
 
 ### instll utils
 instll utils `paru -S <pkgname>...`
 - ntfs-3g
+- openssh
+
+### install develop tools
+install develop tools `paru -S <pkgname>...`
+- docker - todo setup
+- go
+- jdk21-openjdk
+- 
+
 
 ### Used resources
 
