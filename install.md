@@ -82,5 +82,7 @@ Exit from install
 ### Used resources
 
 arch Installation guide - https://wiki.archlinux.org/title/Installation_guide
+
 install arch on lvm - https://wiki.archlinux.org/title/Install_Arch_Linux_on_LVM
+
 gist Installing Arch with LVM - https://gist.github.com/KarthikNayak/912c268aa62c3ede3c0f707164f2d4ab
