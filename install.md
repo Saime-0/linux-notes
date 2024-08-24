@@ -40,7 +40,7 @@ Mount fs
 
 Install system to mounted fs
 
-- exec cmd `pacstrap -K /mnt base linux linux-firmware vim iwd wpa_supplicant lvm2`
+- exec cmd `pacstrap -K /mnt base linux linux-firmware bash-completion vim iwd wpa_supplicant lvm2`
 - exec cmd `genfstab -U /mnt >> /mnt/etc/fstab`
 - exec cmd `arch-chroot /mnt` for enter
 
