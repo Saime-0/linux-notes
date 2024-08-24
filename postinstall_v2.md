@@ -1,5 +1,18 @@
+# Table of Contents
+1. [Nework, user and AUR](#Nework,_user_and_AUR)
+2. [Desktop environment](#Desktop_environment)
+  1. [Hypr](#Hypr)
+  2. [Dotfiles moment](#Dotfiles_moment)
+  3. [Bluetooth](#Bluetooth)
+  4. [VPN](#VPN)
+5. [Install user applications](#Install_user_applications)
+  1. [User apps](#User_apps)
+  2. [Utils](#Utils)
+  3. [Develop](#Develop)
 
-## Network
+
+
+## Nework, user and AUR
 enable builtin-dhcp client of iwd [wiki](https://wiki.archlinux.org/title/Iwd#Enable_built-in_network_configuration), create/edit `/etc/iwd/main.conf` and add the following section to it:
 ```
 [General]
@@ -48,6 +61,8 @@ makepkg -si
 
 ## Desktop environment
 
+### Hypr
+
 install hyprland and de apps, packages: 
 ```
 hyprland alacritty xdg-desktop-portal-hyprland wofi btop xfce4-notifyd thunar grimblast-git
@@ -70,6 +85,7 @@ install missing fonts and fonts for chinese, japanese and korean, packages:
 ```
 noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk
 ```
+
 ### Dotfiles moment
 
 may exec cmd `Hyprland` for enter into hyperland
