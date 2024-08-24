@@ -21,5 +21,7 @@
 
 `$_` - hold last arg of previous cmd
 
+`mv -v ~/.config/pulseaudio{,~}` - destruct separated elements in `{}` to args
+
 
 
