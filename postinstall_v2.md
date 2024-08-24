@@ -117,14 +117,16 @@ install networkmanager for using as openvpn client, packages:
 ```
 networkmanager networkmanager-openvpn
 ```
-- networkmanager
-- networkmanager-openvpn
+- `networkmanager` - network connection manager and user applications
+- `networkmanager-openvpn` - nm opvn plugin, along with the openvpn installation
 
 exec cmd `nmcli connection import type openvpn file <filename.ovpn>` for add ovpn connection
 
+## Install user applications
 
-### install user apps
-install user apps `paru -S <pkgname>...`
+use `paru -S <pkgname>...` for install packages
+
+### User apps
 - `google-chrome` - web browser by Google (Stable Channel)
 - `firefox` - web Browser
 - `telegram-desktop` - telegram client
@@ -135,17 +137,15 @@ install user apps `paru -S <pkgname>...`
 - `vlc` - media player
 - `xarchiver p7zip unrar unzip zip` - gui archiver and supported formats
 
-### instll utils
-instll utils `paru -S <pkgname>...`
-- ntfs-3g
-- openssh
-- man-db
+### Utils
+- `ntfs-3g`
+- `openssh`
+- `man-db`
 
 ### install develop tools
-install develop tools `paru -S <pkgname>...`
-- docker - todo setup
-- go
-- jdk21-openjdk
+- `docker - todo setup`
+- `go`
+- `jdk21-openjdk`
 - 
 
 
