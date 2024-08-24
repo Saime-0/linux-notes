@@ -61,6 +61,8 @@ install sound server `paru -S pipewire pipewire-jack pipewire-pulse pipewire-als
 *tip: start pulseaudio server `pipewire-pulse`*
 *tip: copy pipwire cfg to user dir `cp -r /usr/share/pipewire ~/.config/pipewire`*
 
+install bluetooth `paru -S bluez bluez-utils blueman`
+
 copy needed files from [dotfiles](https://github.com/Saime-0/config)
 
 install missing fonts
