@@ -6,6 +6,7 @@ EnableNetworkConfiguration=true
 NameResolvingService=systemd
 ```
 then `systemctl enable --now systemd-resolved` - start NSS
+
 then `systemctl enable --now iwd` - start iwd
 
 and connect to network using `iwctl`
@@ -26,9 +27,11 @@ useradd -G wheel -m <username>
 passwd <username>
 ```
 
-exec cmd `su <username>` for login via the user
+exec cmd `su <username>` for login as the user
+
 exec cmd `rustup default stable` for install rust (its required by paru)
-exec cmd `mkdir ~/tmp` for create tmp dir
+
+exec cmd `mkdir ~/tmp && cd $_` for create tmp dir and cd to it
 
 then change dir and install paru
 ```sh
