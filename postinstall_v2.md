@@ -68,10 +68,19 @@ install fonts for chinese,japanese and korean
 ```sh
 paru -S noto-fonts-cjk  
 ```
+### install user apps
+install user apps `paru -S <pkgname>...`
+- helix
+- google-chrome
+- friefox
+- telegram-desktop
+- ristretto
+- libreoffice-still
+- obs-studio
 
-install user apps `paru -S helix google-chrome friefox telegram-desktop ristretto libreoffice-still`
-
-instll utils `paru -S ntfs-3g`
+### instll utils
+instll utils `paru -S <pkgname>...`
+- ntfs-3g
 
 ### Used resources
 
