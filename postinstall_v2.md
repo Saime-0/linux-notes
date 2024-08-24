@@ -75,6 +75,8 @@ install sound server `paru -S pipewire pipewire-jack pipewire-pulse pipewire-als
 
 install bluetooth `paru -S bluez bluez-utils blueman`
 
+exec cmd `systemctl enable --now bluetooth.service` for start bluez daemon
+
 install networkmanager `paru -S newtworkmanager openvpn newtworkmanager-openvpn`
 
 exec cmd `nmcli connection import type openvpn file <filename.ovpn>` for add ovpn connection
