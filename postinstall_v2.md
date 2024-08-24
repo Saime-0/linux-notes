@@ -56,7 +56,7 @@ replace `kitty` with `alacritty` in `~/.config/hypr/hyprland.conf`
 
 may exec cmd `Hyperland` for enter into hyperland
 
-install sound server `paru -S pipewire pipewire-jack`
+install sound server `paru -S pipewire pipewire-jack pipewire-pulse pipewire-alsa pavucontrol`
 
 copy needed files from [dotfiles](https://github.com/Saime-0/config)
 
