@@ -40,7 +40,7 @@ Mount fs
 
 Install system to mounted fs
 
-- exec cmd `pacstrap -K /mnt base linux linux-firmware vim iwd lvm2`
+- exec cmd `pacstrap -K /mnt base linux linux-firmware vim iwd wpa_supplicant lvm2`
 - exec cmd `genfstab -U /mnt >> /mnt/etc/fstab`
 - exec cmd `arch-chroot /mnt` for enter
 
@@ -48,8 +48,32 @@ Setup mounted fs
 
 - uncomment in `/etc/locale.gen` file needed localisations: `en_US.UTF-8 UTF-8` and `ru_RU.UTF-8 UTF-8`
 - exec cmd `locale-gen` for generate locales
-- exec `echo "LANF=en_US.UTF-8" > /etc/locale.conf`
+- exec `echo "LANG=en_US.UTF-8" > /etc/locale.conf`
 - exec cmd `ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime` for set TZ
 - exec cmd `hwclock --systohc`
 - edit `/etc/mkinitcpio.conf` file - insert `lvm2` between `block` and `filesystems` like so: `HOOKS="base udev ... block lvm2 filesystems"` to provide support for lvm2
 - exec `mkinitcpio -p linux` for generate the initramfs image
+- exec `passwd` and enter password for root
+
+Setup boot
+
+- `bootctl install`
+- edit `/boot/loader/loader.conf`
+```
+default  arch
+timeout  4
+editor   0
+```
+- edit `/boot/loader/entries/arch-lvm.conf` for creating entry
+```
+title          Arch Linux (LVM)
+linux          /vmlinuz-linux
+initrd         /initramfs-linux.img
+options        root=/dev/mapper/avg0-root rw
+```
+
+Exit from install
+
+- Ctrl + D
+- exec  cmd `umount -R /mnt`
+- exec cmd `reboot`
