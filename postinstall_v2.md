@@ -10,30 +10,37 @@
     2. [Utils](#Utils)
     3. [Develop](#Develop)
 
-
-
 ## Nework, user and AUR
-enable builtin-dhcp client of iwd [wiki](https://wiki.archlinux.org/title/Iwd#Enable_built-in_network_configuration), create/edit `/etc/iwd/main.conf` and add the following section to it:
+
+### Network setup
+
+enable builtin-dhcp client of iwd:\
+create/edit `/etc/iwd/main.conf` and add the following section to it:
 ```
 [General]
 EnableNetworkConfiguration=true
 ```
-then `systemctl enable --now systemd-resolved` - start NSS
-
+then `systemctl enable --now systemd-resolved` - start NSS\
 then `systemctl enable --now iwd` - start iwd
 
 and connect to network using `iwctl`
 
 ## Create user and get AUR wrapper 
 
-befo install paru and create user - `pacman -S --needed git base-devel sudo rustup`
+**prerequirement:*
+uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
+
+### User
+
+install sudo, package:
+`sudo`
+- `sudo` - ability to run cmds as superuser 
 
 exec cmd `EDITOR=/usr/bin/vim visudo` and uncomment line: `%wheel ALL=(ALL:ALL) ALL`
-or write plugin
-```sh
-echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/included
-```
+> or write plugin\
+> `echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/included`
 
+\
 create new user and add to `wheel`
 ```sh
 useradd -G wheel -m <username>
@@ -42,17 +49,18 @@ passwd <username>
 
 exec cmd `su <username>` for login as the user
 
-uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
+### Paru
 
-exec cmd `rustup default stable` for install rust (its required by paru)
+for install paru deps and sudo:\
+exec cmd `pacman -S --needed git base-devel rustup` 
+- `git` - vcs, need for get paru from git repository
+- `base-devel` - tools for build packages
+- `rustup` - rust toolchain installer, need for install rust (its required by paru)
 
-exec cmd `mkdir ~/tmp && cd $_` for create tmp dir and cd to it
+exec cmd `rustup default stable` for install rust (for build paru binary)
 
-then change dir and install paru
-```sh
-cd ~/tmp
-```
-[paru](https://github.com/Morganamilo/paru) - Feature packed AUR helper
+exec cmd `mkdir ~/tmp && cd $_` for create tmp dir and cd to it\
+and build package:
 ```sh
 git clone https://aur.archlinux.org/paru.git
 cd paru
@@ -150,6 +158,8 @@ use `paru -S <pkgname>...` for install packages
 
 
 ### Used resources
+
+iwd arch wiki - https://wiki.archlinux.org/title/Iwd#Enable_built-in_network_configuration
 
 install missing fonts - https://www.reddit.com/r/archlinux/comments/slgacn/comment/hvqnffc
 
