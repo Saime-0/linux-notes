@@ -27,8 +27,7 @@ and connect to network using `iwctl`
 
 ## Create user and get AUR wrapper 
 
-**prerequirement:*
-uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
+**tip:* uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
 
 ### User
 
