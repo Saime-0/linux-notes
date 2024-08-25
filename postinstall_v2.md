@@ -156,12 +156,13 @@ use `paru -S <pkgname>...` for install packages
 ### Develop
 - `docker` - container application, **todo: add link to setup**
 - `go` - golang
-- `jdk21-openjdk` - OpenJDK Java 21 development kit
 - `unityhub` - Unity Hub
 - `postman-bin` - gui api client for test
 - `goland` - Go IDE
-- `rider` - A cross-platform .NET IDE by JetBrains. todo: install .net, mono, etc...
+- `rider mono dotnet-sdk` - .net IDE and deps
 - `phpstorm` - PHP IDE
+- `intellij-idea-community-edition` - idea
+- `rustrover` - IDE for Rust
 
 
 ### Used resources
