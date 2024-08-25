@@ -144,9 +144,9 @@ install bluetooth, packages:
 ```
 bluez bluez-utils blueman
 ```
-- bluez
-- bluez-utils
-- blueman
+- `bluez` - Daemons for the bluetooth protocol stack
+- `bluez-utils` - utilities for the bluetooth
+- `blueman` - GTK+ Bluetooth Manager
   
 for start bluez daemon, exec cmd:
 ```sh
