@@ -18,7 +18,7 @@
 ### Network setup
 
 for enable builtin-dhcp client of iwd, exec cmd:
-```
+```sh
 echo "[General]
 EnableNetworkConfiguration=true" >> /etc/iwd/main.conf
 ```
