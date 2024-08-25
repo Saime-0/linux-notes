@@ -110,7 +110,7 @@ for replace `kitty` with `alacritty`, exec cmd:
 sed -i 's/= kitty/= alacritty/g' $_
 ```
 
-install missing fonts and fonts for chinese, japanese and korean, packages:
+install fonts, packages:
 ```
 ttf-jetbrains-mono noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk
 ```
