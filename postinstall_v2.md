@@ -1,5 +1,5 @@
 # Table of Contents
-1. [Nework, user and AUR](#Nework,-user-and-AUR)
+1. [Nework, user and AUR](#Nework-user-and-AUR)
     1. [Network setup](#Network-setup)
     2. [Create user](#Create-user)
     3. [Install Paru](#Install-Paru)
@@ -10,7 +10,7 @@
     4. [VPN](#VPN)
 5. [Install user applications](#Install-user-applications)
     1. [User apps](#User-apps)
-    2. [Uti,ls](#Utils)
+    2. [Utils](#Utils)
     3. [Develop](#Develop)
 
 ## Nework, user and AUR
