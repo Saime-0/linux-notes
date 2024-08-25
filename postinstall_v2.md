@@ -160,6 +160,8 @@ use `paru -S <pkgname>...` for install packages
 - `unityhub` - Unity Hub
 - `postman-bin` - gui api client for test
 - `goland` - Go IDE
+- `rider` - A cross-platform .NET IDE by JetBrains. todo: install .net, mono, etc...
+- `phpstorm` - PHP IDE
 
 
 ### Used resources
