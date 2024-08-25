@@ -147,7 +147,7 @@ use `paru -S <pkgname>...` for install packages
 - `vlc` - media player
 - `xarchiver p7zip unrar unzip zip` - gui archiver and supported formats
 
-### Utils
+### Uti,ls
 - `ntfs-3g`
 - `openssh`
 - `man-db`
