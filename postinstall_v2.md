@@ -43,7 +43,7 @@ iwctl
 **tip:* uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
 
 for install sudo, exec cmd:
-```
+```sh
 pacman -S sudo
 ```
 - `sudo` - ability to run cmds as superuser 
@@ -53,13 +53,16 @@ exec cmd `EDITOR=/usr/bin/vim visudo` and uncomment line: `%wheel ALL=(ALL:ALL) 
 > `echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/included`
 
 \
-create new user and add to `wheel`
+for create new user and add to `wheel`, use cmd template:
 ```sh
 useradd -G wheel -m <username>
 passwd <username>
 ``` 
 
-exec cmd `su <username>` for login as the user
+for login as the user, use cmd template:
+```sh
+su <username>
+```
 
 ### Install Paru
 
