@@ -107,7 +107,7 @@ cp /usr/share/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
 
 for replace `kitty` with `alacritty`, exec cmd:
 ```sh
-sed -i 's/= kitty/= alacritty/g' $_
+sed -i 's/= kitty/= alacritty/' $_
 ```
 
 install fonts, packages:
