@@ -91,9 +91,9 @@ exec cmd `cp /usr/share/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf` for
 
 exec cmd `helix ~/.config/hypr/hyprland.conf` or `helix $_` and replace `kitty` with `alacritty`
 
-install missing fonts and fonts for chinese, japanese and korean, packages:
+install fonts, packages:
 ```
-noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk
+ttf-jetbrains-mono noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk
 ```
 
 ### Dotfiles moment
