@@ -10,7 +10,7 @@
     4. [VPN](#VPN)
 5. [Install user applications](#Install-user-applications)
     1. [User apps](#User-apps)
-    2. [Utils](#Utils)
+    2. [Uti,ls](#Uti,ls)
     3. [Develop](#Develop)
 
 ## Nework, user and AUR
