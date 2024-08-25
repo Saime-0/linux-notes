@@ -200,6 +200,7 @@ paru -S <pkgname>...
 - `qbittorrent` - bitTorrent client
 - `vlc` - media player
 - `xarchiver p7zip unrar unzip zip` - gui archiver and supported formats
+- `keepassxc` - port of Keepass password manager
 
 ### Utils
 - `ntfs-3g` - userspace NTFS driver and utilities 
