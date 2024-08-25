@@ -91,7 +91,7 @@ exec cmd `cp /usr/share/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf` for
 
 exec cmd `helix ~/.config/hypr/hyprland.conf` or `helix $_` and replace `kitty` with `alacritty`
 
-install fonts, packages:
+install missing fonts and fonts for chinese, japanese and korean, packages:
 ```
 ttf-jetbrains-mono noto-fonts ttf-dejavu ttf-liberation noto-fonts-emoji noto-fonts-cjk
 ```
@@ -148,15 +148,18 @@ use `paru -S <pkgname>...` for install packages
 - `xarchiver p7zip unrar unzip zip` - gui archiver and supported formats
 
 ### Utils
-- `ntfs-3g`
-- `openssh`
-- `man-db`
+- `ntfs-3g` - userspace NTFS driver and utilities 
+- `openssh` - SSH protocol implementation
+- `man-db` - utility for reading man pages
+- `jq` - command-line JSON processor
 
 ### Develop
-- `docker - todo setup`
-- `go`
-- `jdk21-openjdk`
-- 
+- `docker` - container application, **todo: add link to setup**
+- `go` - golang
+- `jdk21-openjdk` - OpenJDK Java 21 development kit
+- `unityhub` - Unity Hub
+- `postman-bin` - gui api client for test
+- `goland` - Go IDE
 
 
 ### Used resources
