@@ -9,7 +9,7 @@
     3. [Bluetooth](#Bluetooth)
     4. [VPN](#VPN)
 5. [Install user applications](#Install_user_applications)
-    1. [User apps](#Userapps)
+    1. [User apps](#User-apps)
     2. [Utils](#Utils)
     3. [Develop](#Develop)
 
