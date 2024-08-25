@@ -1,6 +1,9 @@
 # Table of Contents
 1. [Nework, user and AUR](#Nework,_user_and_AUR)
-2. [Desktop environment](#Desktop_environment)
+    1. [Network setup](#Network_setup)
+    2. [Create user](#Create_user)
+    3. [Install Paru](#Install_Paru)
+3. [Desktop environment](#Desktop_environment)
     1. [Hypr](#Hypr)
     2. [Dotfiles moment](#Dotfiles_moment)
     3. [Bluetooth](#Bluetooth)
@@ -25,14 +28,14 @@ then `systemctl enable --now iwd` - start iwd
 
 and connect to network using `iwctl`
 
-## Create user and get AUR wrapper 
+### Create user
 
 **tip:* uncomment `Color` and `ParallelDownloads` in `/etc/pacman.conf`
 
-### User
-
-install sudo, package:
-`sudo`
+for install sudo, exec cmd:
+```
+pacman -S sudo
+```
 - `sudo` - ability to run cmds as superuser 
 
 exec cmd `EDITOR=/usr/bin/vim visudo` and uncomment line: `%wheel ALL=(ALL:ALL) ALL`
@@ -48,7 +51,7 @@ passwd <username>
 
 exec cmd `su <username>` for login as the user
 
-### Paru
+### Install Paru
 
 for install paru deps and sudo:\
 exec cmd `pacman -S --needed git base-devel rustup` 
@@ -70,9 +73,9 @@ makepkg -si
 
 ### Hypr
 
-install hyprland and de apps, packages: 
+for install install hyprland and de apps, exec cmd:
 ```
-hyprland alacritty xdg-desktop-portal-hyprland wofi btop xfce4-notifyd thunar grimblast-git
+paru -S hyprland alacritty xdg-desktop-portal-hyprland wofi btop xfce4-notifyd thunar grimblast-git
 ```
 - `hyprland` - tiling Wayland compositor
 - `alacritty` - terminal emulator
