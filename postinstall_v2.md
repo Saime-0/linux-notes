@@ -162,6 +162,21 @@ networkmanager networkmanager-openvpn
 - `networkmanager` - network connection manager and user applications
 - `networkmanager-openvpn` - nm opvn plugin, will install openvpn together with himself
 
+for disconnect from network, exec cmd:
+```sh
+iwctl station wlan0 disconnect
+```
+
+for run nm service, exec cmd:
+```sh
+systemctl enable --now NetworkManager.service
+```
+
+for connect to network via network manager, use cmd template:
+```sh
+nmcli device wifi connect <wifi> -a
+```
+
 for add ovpn connection, use cmd template:
 ```sh
 nmcli connection import type openvpn file <filename.ovpn>
