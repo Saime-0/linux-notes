@@ -17,12 +17,12 @@
 
 ### Network setup
 
-enable builtin-dhcp client of iwd:\
-create/edit `/etc/iwd/main.conf` and add the following section to it:
+for enable builtin-dhcp client of iwd, exec cmd:
 ```
-[General]
-EnableNetworkConfiguration=true
+echo "[General]
+EnableNetworkConfiguration=true" >> /etc/iwd/main.conf
 ```
+
 for start NSS, exec cmd:
 ```sh
 systemctl enable --now systemd-resolved
