@@ -208,6 +208,7 @@ paru -S <pkgname>...
 - `openssh` - SSH protocol implementation
 - `man-db` - utility for reading man pages
 - `jq` - command-line JSON processor
+- `rsync` - sync remote and local files
 
 ### Develop
 - `docker` - container application, **todo: add link to setup**
