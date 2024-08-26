@@ -7,6 +7,7 @@
 `python3 -m http.server` - run http server with access to local directory
 
 `git ls-files -z <directory> | xargs -0 git rm --cached` - remove staged files from index in directory
+`sudo setfacl --modify user:<user name or ID>:rw /var/run/docker.sock` -- add to group
 
 ### Bash
 `ctrl+alt+l` - alternative `clear`
