@@ -211,7 +211,7 @@ paru -S <pkgname>...
 - `rsync` - sync remote and local files
 
 ### Develop
-- `docker` - container application, **todo: add link to setup**
+- `docker docker-compose` - container application, **todo: add link to setup**
 - `go` - golang
 - `unityhub` - Unity Hub
 - `postman-bin` - gui api client for test
