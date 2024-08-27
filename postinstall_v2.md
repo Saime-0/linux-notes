@@ -212,10 +212,11 @@ paru -S <pkgname>...
 - `man-db` - utility for reading man pages
 - `jq` - command-line JSON processor
 - `rsync` - sync remote and local files
+- `ncdu` - du tui
 
 ### Develop
 - `docker docker-compose` - container application, **todo: add link to setup**
-- `go` - golang
+- `go gopls` - golang, lsp
 - `unityhub` - Unity Hub
 - `postman-bin` - gui api client for test
 - `goland` - Go IDE
