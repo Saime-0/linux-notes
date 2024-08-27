@@ -88,12 +88,13 @@ makepkg -si
 
 for install install hyprland and de apps, exec cmd:
 ```
-paru -S hyprland alacritty xdg-desktop-portal-hyprland wofi btop xfce4-notifyd thunar wl-clipboard grimblast-git
+paru -S hyprland alacritty xdg-desktop-portal-hyprland fluent-gtk-theme wofi btop xfce4-notifyd thunar wl-clipboard grimblast-git
 ```
 - `hyprland` - tiling Wayland compositor
 - `alacritty` - terminal emulator
 - `helix` - post-modern modal text editor
 - `xdg-desktop-portal-hyprland` - xdg-desktop-portal backend for hyprland
+- `fluent-gtk-theme` - theme
 - `wofi` - launcher for wlroots-based wayland compositors
 - `btop` - monitor of system resources
 - `xfce4-notifyd` - xfce notification daemon
