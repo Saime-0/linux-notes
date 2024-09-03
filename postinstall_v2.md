@@ -88,7 +88,7 @@ makepkg -si
 
 for install install hyprland and de apps, exec cmd:
 ```
-paru -S hyprland alacritty wofi btop xfce4-notifyd thunar wl-clipboard grimblast-git xdg-desktop-portal-hyprland fluent-gtk-theme gruvbox-dark-icons-gtk qt6ct
+paru -S hyprland alacritty wofi btop xfce4-notifyd thunar wl-clipboard grimblast-git ripgrep xdg-desktop-portal-hyprland fluent-gtk-theme gruvbox-dark-icons-gtk qt6ct
 ```
 - `hyprland` - tiling Wayland compositor
 - `alacritty` - terminal emulator
@@ -99,6 +99,7 @@ paru -S hyprland alacritty wofi btop xfce4-notifyd thunar wl-clipboard grimblast
 - `thunar` - xfce file manager
 - `wl-clipboard` - command-line copy/paste utilities for Wayland
 - `grimblast-git` - screenshoter within Hyprland
+- `ripgrep` - search tool
 - `xdg-desktop-portal-hyprland` - xdg-desktop-portal backend for hyprland
 - `fluent-gtk-theme` - theme
 - `gruvbox-dark-icons-gtk` - icons
