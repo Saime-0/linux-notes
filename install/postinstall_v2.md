@@ -3,12 +3,12 @@
     1. [Network setup](#Network-setup)
     2. [Create user](#Create-user)
     3. [Install Paru](#Install-Paru)
-3. [Desktop environment](#Desktop-environment)
+2. [Desktop environment](#Desktop-environment)
     1. [Hypr](#Hypr)
     2. [Dotfiles moment](#Dotfiles-moment)
     3. [Bluetooth](#Bluetooth)
     4. [VPN](#VPN)
-5. [Install user applications](#Install-user-applications)
+3. [Install user applications](#Install-user-applications)
     1. [User apps](#User-apps)
     2. [Utils](#Utils)
     3. [Develop](#Develop)
@@ -215,6 +215,7 @@ paru -S <pkgname>...
 - `jq` - command-line JSON processor
 - `rsync` - sync remote and local files
 - `ncdu` - du tui
+- `zzz` - simple program to suspend or hibernate your computer
 
 ### Develop
 - `docker docker-compose` - container application, **todo: add link to setup**
