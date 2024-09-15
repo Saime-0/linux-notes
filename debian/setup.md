@@ -1,17 +1,27 @@
 ```sh
 sudo apt install sudo neofetch zsh sshfs
+```
 
+```sh
 echo "# set PATH so it includes sbin if it exists
 if [ -d "/usr/sbin" ] ; then
     PATH="/usr/sbin:$PATH"
 fi" >> .profile
+```sh
 
+```sh
 source .profile
+```
 
+```sh
 usermod -aG sudo username
+```
 
+```sh
 chsh -s /bin/zsh
+```
 
+```sh
 echo "EDITOR="vim"
 
 setopt histignorealldups sharehistory
@@ -26,5 +36,8 @@ HISTFILE=~/.zsh_history
 setopt appendhistory # Сохраняем всю историю в файл, чтобы она не стиралась, если мы выключим и включим шелл
 
 PROMPT='%F{138}%n%F{137}@%F{138}%m %F{15}%~ %F{137}$ %F{115}'" > ~/.zshrc
+```
 
+```sh
 touch ~/.hushlogin
+```
