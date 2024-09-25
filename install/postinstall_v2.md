@@ -176,6 +176,13 @@ for disconnect from network, exec cmd:
 iwctl station wlan0 disconnect
 ```
 
+use iwctl backend, exec cmd:
+```sh
+echo "[device]
+wifi.backend=iwd
+wifi.iwd.autoconnect=yes" | sudo tee -a /etc/NetworkManager/NetworkManager.conf > /dev/null
+```
+
 for run nm service, exec cmd:
 ```sh
 systemctl enable --now NetworkManager.service
