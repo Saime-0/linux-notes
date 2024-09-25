@@ -37,6 +37,10 @@ connect to network using *iwctl*, for enter into iwctl interactly, exec cmd:
 ```sh
 iwctl
 ```
+enable systemc clock sync:
+```sh
+systemctl enable --now systemd-timesyncd
+```
 
 ### Create user
 
