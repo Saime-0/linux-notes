@@ -34,15 +34,15 @@ Format the partitions
 
 Mount fs
 
-- exec cmd `mount --mkdir /dev/avg0/root /mnt`
-- exec cmd `mount --mkdir /dev/avg0/home /mnt/home`
-- exec cmd `mount --mkdir /dev/sda1 /mnt/boot`
+- exec cmd `mount --mkdir /dev/avg0/root mnt`
+- exec cmd `mount --mkdir /dev/avg0/home mnt/home`
+- exec cmd `mount --mkdir /dev/sda1 mnt/boot`
 
 Install system to mounted fs
 
-- exec cmd `pacstrap -K /mnt base linux linux-firmware bash-completion vim iwd wpa_supplicant lvm2`
-- exec cmd `genfstab -U /mnt >> /mnt/etc/fstab`
-- exec cmd `arch-chroot /mnt` for enter
+- exec cmd `pacstrap -K mnt base linux linux-firmware bash-completion vim iwd wpa_supplicant lvm2`
+- exec cmd `genfstab -U mnt >> mnt/etc/fstab`
+- exec cmd `arch-chroot mnt` for enter
 
 Setup mounted fs
 
