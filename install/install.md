@@ -75,7 +75,7 @@ options        root=/dev/mapper/avg0-root rw
 Exit from install
 
 - Ctrl + D
-- exec  cmd `umount -R /mnt`
+- exec  cmd `umount -R mnt`
 - exec cmd `reboot`
 
 
