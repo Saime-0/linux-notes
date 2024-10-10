@@ -29,8 +29,8 @@ Format the partitions
 - exec cmd `mkfs.fat -F32 /dev/sda1` formatting boot volume
 - exec cmd `mkfs.ext4 /dev/avg0/root` formatting root volume
 - exec cmd `mkfs.ext4 /dev/avg0/home` formatting home volume
-- exec cmd `mkswap /dev/lvm/swap` formatting swap volume
-- exec cmd `swapon /dev/lvm/swap` enable swap
+- exec cmd `mkswap /dev/avg0/swap` formatting swap volume
+- exec cmd `swapon /dev/avg0/swap` enable swap
 
 Mount fs
 
