@@ -21,7 +21,7 @@ Setup LVM
 - exec cmd `vgcreate avg0 /dev/sda2` for create volume group
 - exec cmd `lvcreate -L 60G avg0 -n root` for create logical volume for root part
 - exec cmd `lvcreate -L 8G avg0 -n swap` for create logical volume for root part
-- exec cmd `lvcreate -l 100% avg0 -n home` for create logical volume for root part
+- exec cmd `lvcreate -l 100%FREE avg0 -n home` for create logical volume for root part
 - exec cmd `lvreduce -L -256M avg0/home` for leave at least 256 MiB free space in the volume group to allow using e2scrub(8) ([arch guide tip](https://wiki.archlinux.org/title/Install_Arch_Linux_on_LVM#Create_logical_volumes))
 
 Format the partitions
