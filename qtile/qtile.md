@@ -40,10 +40,54 @@ Alactritty config file: `.config/alacritty/alacritty.toml`
 family = "Agave Nerd Font Mono"
 ```
 
+`~/.xinitrc`
+```sh
+
+export XCURSOR_SIZE=24
+export QT_QPA_PLATFORM=xcb
+export GDK_BACKEND=x11,*
+export SDL_VIDEODRIVER=x11
+export CLUTTER_BACKEND=x11
+export XDG_CURRENT_DESKTOP=Qtile
+export XDG_SESSION_TYPE=x11
+export XDG_SESSION_DESKTOP=Qtile
+
+export XCURSOR_THEME=Adwaita
+export GTK_THEME=Fluent-round-Dark
+export GTK_ICON_THEME=gruvbox-dark-icons-gtk
+export QT_STYLE_OVERRIDE=qt6ct-style
+export QT_QPA_PLATFORMTHEME=qt6ct
+
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket 
+
+# Установка параметров повторения клавиш
+xset r rate 185 40
+
+# Установка раскладки клавиатуры
+setxkbmap -layout us,ru -option "grp:win_space_toggle,grp_led:caps,caps:super"
+
+# Демон уведомлений
+dunst &
+
+# Запуск qtile
+qtile start
+```
+
 Bashrc: `~/.bashrc`
 ```sh
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+
+# user-dirs.dirs
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DESKTOP_DIR=$HOME/desktop
+export XDG_DOCUMENTS_DIR=$HOME/documents
+export XDG_DOWNLOAD_DIR=$HOME/downloads
+export XDG_MUSIC_DIR=$HOME/music
+export XDG_PICTURES_DIR=$HOME/pictures
+export XDG_PUBLICSHARE_DIR=$HOME/public
+export XDG_TEMPLATES_DIR=$HOME/templates
+export XDG_VIDEOS_DIR=$HOME/videos
 
 # Ignore duplicate commands and has ' ' prefiix
 HISTCONTROL=ignoreboth:erasedups
