@@ -30,6 +30,7 @@ startx
 - `ttf-agave-nerd` - font Agave from nerd fonts library (terminal)
 - `terminus-font` - Monospace bitmap font (tty)
 - `ttf-jetbrains-mono-nerd` - monospace JetBrains fonts (coding)
+- `locale-en_ru` - Update en_RU.UTF-8 locale
 
 ### Config
 
