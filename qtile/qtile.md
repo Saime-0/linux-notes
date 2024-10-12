@@ -2,7 +2,7 @@
 ### WM Qtile intro
 install
 ```sh
-paru -S xorg-server xorg-xinit qtile
+paru -S xorg-server xorg-xinit qtile python-psutil
 ```
 create `~/.xinitrc`
 ```sh
