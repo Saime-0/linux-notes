@@ -15,7 +15,7 @@ copy default config, and edit it
 cp /usr/share/doc/qtile/default_config.py .config/qtile/config.py
 ```
 
-for qtile
+for start qtile
 ```sh
 startx
 ```
@@ -24,6 +24,7 @@ startx
 
 - `nnn` - terminal file manager
 - `alacritty` - terminal
+- `dunst` - lightweight notification-daemon
 - `ttf-agave-nerd` - font Agave from nerd fonts library (terminal)
 - `terminus-font` - Monospace bitmap font (tty)
 - `ttf-jetbrains-mono-nerd` - monospace JetBrains fonts (coding)
