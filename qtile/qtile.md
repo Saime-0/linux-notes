@@ -1,5 +1,5 @@
 
-### Qtile intro
+### WM Qtile intro
 install
 ```sh
 paru -S xorg-server xorg-xinit qtile
@@ -22,3 +22,14 @@ for qtile
 startx
 ```
 
+### Packages
+- `nnn` - terminal file manager
+- `alacritty` - terminal
+
+### Config
+
+Alactritty config file: `.config/alacritty/alacritty.toml`
+```toml
+[font.normal]
+family = "Agave Nerd Font Mono"
+```
