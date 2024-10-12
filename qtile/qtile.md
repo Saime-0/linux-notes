@@ -6,8 +6,6 @@ paru -S xorg-server xorg-xinit qtile
 ```
 create `~/.xinitrc`
 ```sh
-#!/bin/bash
-
 xset r rate 185 40 # Параметры повторения клавиш
 setxkbmap -layout us,ru -option "grp:win_space_toggle,grp_led:caps,caps:super" # Раскладка клавиатуры
 qtile start # Запуск не в exec, чтобы работал setxkbmap 
@@ -23,6 +21,7 @@ startx
 ```
 
 ### Packages
+
 - `nnn` - terminal file manager
 - `alacritty` - terminal
 
@@ -32,4 +31,30 @@ Alactritty config file: `.config/alacritty/alacritty.toml`
 ```toml
 [font.normal]
 family = "Agave Nerd Font Mono"
+```
+
+Bashrc: `~/.bashrc`
+```sh
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# Ignore duplicate commands and has ' ' prefiix
+HISTCONTROL=ignoreboth:erasedups
+
+# Setup prompt
+Fuchsia="$(tput setaf 13)"
+Grey50="$(tput setaf 244)"
+Reset="$(tput sgr0)"
+PS1='${Fuchsia}\u@${Grey50}\h \W \\$ ${Reset}'
+
+# Print battary level
+alias batcap='cat /sys/class/power_supply/BAT0/capacity'
+
+# Set brighness level
+function setbright() {
+	echo $1 | sudo tee /sys/class/backlight/amdgpu_bl1/brightness >> null
+}
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 ```
