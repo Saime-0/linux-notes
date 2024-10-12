@@ -24,6 +24,9 @@ startx
 
 - `nnn` - terminal file manager
 - `alacritty` - terminal
+- `ttf-agave-nerd` - font Agave from nerd fonts library (terminal)
+- `terminus-font` - Monospace bitmap font (tty)
+- `ttf-jetbrains-mono-nerd` - monospace JetBrains fonts (coding)
 
 ### Config
 
