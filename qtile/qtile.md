@@ -36,8 +36,9 @@ startx
 
 Alactritty config file: `.config/alacritty/alacritty.toml`
 ```toml
-[font.normal]
-family = "Agave Nerd Font Mono"
+[font]
+size = 11
+normal = { family = "Agave Nerd Font Mono" }
 ```
 
 `~/.xinitrc`
