@@ -29,7 +29,7 @@ startx
 - `dunst` - lightweight notification-daemon
 - `ttf-agave-nerd` - font Agave from nerd fonts library (terminal)
 - `terminus-font` - Monospace bitmap font (tty)
-- `ttf-jetbrains-mono-nerd` - monospace JetBrains fonts (coding)
+- `ttf-jetbrains-mono ttf-jetbrains-mono-nerd` - monospace JetBrains fonts (coding)
 - `locale-en_ru` - Update en_RU.UTF-8 locale
 
 ### Config
@@ -73,21 +73,32 @@ dunst &
 qtile start
 ```
 
+user dirs `~/.config/user-dirs.dirs`
+```sh
+XDG_DESKTOP_DIR="$HOME/downloads"
+XDG_DOWNLOAD_DIR="$HOME/downloads"
+XDG_TEMPLATES_DIR="$HOME/dirs/documents/templates"
+XDG_PUBLICSHARE_DIR="$HOME/dirs/documents/public"
+XDG_DOCUMENTS_DIR="$HOME/dirs/documents"
+XDG_MUSIC_DIR="$HOME/dirs/music"
+XDG_PICTURES_DIR="$HOME/dirs/pictures"
+XDG_VIDEOS_DIR="$HOME/dirs/videos"
+```
+
 Bashrc: `~/.bashrc`
 ```sh
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# user-dirs.dirs
+
+#############
+#### ENV ####
+#############
+
 export XDG_CONFIG_HOME=$HOME/.config
-export XDG_DESKTOP_DIR=$HOME/desktop
-export XDG_DOCUMENTS_DIR=$HOME/documents
-export XDG_DOWNLOAD_DIR=$HOME/downloads
-export XDG_MUSIC_DIR=$HOME/music
-export XDG_PICTURES_DIR=$HOME/pictures
-export XDG_PUBLICSHARE_DIR=$HOME/public
-export XDG_TEMPLATES_DIR=$HOME/templates
-export XDG_VIDEOS_DIR=$HOME/videos
+
+export PATH=$PATH:$HOME/.emacs.d/bin
+export GOPATH=$(go env GOPATH)
 
 # Ignore duplicate commands and has ' ' prefiix
 HISTCONTROL=ignoreboth:erasedups
@@ -97,6 +108,11 @@ Fuchsia="$(tput setaf 13)"
 Grey50="$(tput setaf 244)"
 Reset="$(tput sgr0)"
 PS1='${Fuchsia}\u@${Grey50}\h \W \\$ ${Reset}'
+
+
+###############
+#### FUNCS ####
+###############
 
 # Print battary level
 alias batcap='cat /sys/class/power_supply/BAT0/capacity'
@@ -108,4 +124,24 @@ function setbright() {
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+goclifast() {
+    local processors=$1
+    # Запускаем команду в новой оболочке
+    if [ -n "$processors" ]; then
+        bash -c "ulimit -v 10000000 && taskset -c 0-$processors golangci-lint run -v --fast"
+    else
+        bash -c "ulimit -v 10000000 && golangci-lint run -v --fast"
+    fi
+}
+
+
+#################
+#### PLUGINS ####
+#################
+
+# User specific aliases and functions
+for rc in ~/.bashrc.d/*; do
+    [ -f "$rc" ] && . "$rc"
+done
 ```
